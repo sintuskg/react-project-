@@ -17,8 +17,9 @@ const App = () => {
     
     pass += str.charAt(char)
 
-    setPassword(pass)
     }
+    setPassword(pass)
+
 
 
   }, [length, charactorallowed, numberallowed, setPassword])
@@ -90,7 +91,7 @@ const App = () => {
       defaultChecked={charactorallowed}
       id="charInput"
       onChange={()=> {
-        setNumberallowed((prev)=>!prev)
+        setCharactorallowed((prev)=>!prev)
       }}
       />
       <label htmlFor='charInput'>Charactor</label>
